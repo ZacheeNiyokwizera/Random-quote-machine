@@ -1,0 +1,16 @@
+h1 {
+    font-family: 'Tangerine', serif;
+    text-shadow: 4px 4px 4px #aaa;
+    margin: 10px auto;
+    font-size: 3em;
+    color: #333;
+}
+
+body {
+    text-align: center;
+    width: 1000px;
+    margin: 90px auto;
+    background-color: blue;
+    font-family: 'Tangerine', serif;
+    background: url(https://images.pexels.com/photos/953217/pexels-photo-953217.jpeg?cs=srgb&dl=blue-background-delicious-flatlay-953217.jpg&fm=jpg);
+}
