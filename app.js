@@ -10,23 +10,28 @@ var quotes = {
     '9': ["When I was a child, I made use of a child's language, I had a child's feelings and a child's thoughts: now that I am a man, I have put away the things of a child.", "I Corinthians 13:11"],
     '10': ["Love is never tired of waiting; love is kind; love has no envy; love has no high opinion of itself, love has no pride.", "I Corinthians 13:4"],
     '11': ["When you go through the waters, I will be with you; and through the rivers, they will not go over you: when you go through the fire, you will not be burned; and the flame will have no power over you.", "Isaiah 43:2"],
-    '12': ["And you husbands, give thought to your way of life with your wives, giving honour to the woman who is the feebler vessel, but who has an equal part in the heritage of the grace of life; so that you may not be kept from prayer.", "I Peter 3:7"]
+    '12': ["And you husbands, give thought to your way of life with your wives, giving honour to the woman who is the feebler vessel, but who has an equal part in the heritage of the grace of life; so that you may not be kept from prayer.", "I Peter 3:7"],
+    '13': ["The fear of the LORD is the beginning of knowledge, but fools despise wisdom and instruction.", "Proverbs 1:7"],
+    '14': ["Those who conceal their sins do not prosper, but those who confess and renounce them find mercy.", "Proverbs 28:13"],
+    '15': ["Commit to the LORD whatever you do, and he will establish your plans.", "Proverbs 16:3"],
+    '16': ["In their hearts human beings plan their course, but the LORD establishes their steps.", "Proverbs 16:9"],
+    '17': ["A new command I give you: Love one another. As I have loved you, so you must love one another. 35 By this everyone will know that you are my disciples, if you love one another.", "John 13:34-35"]
 }
-$(document).ready(function() {
-    i = Math.floor(Math.random() * 12) + 1;
+$(document).ready(function () {
+    i = Math.floor(Math.random() * 17) + 1;
     $('p').text("''" + quotes[i][0] + "''");
     $('#author').text(quotes[i][1]);
 
-    $('#tweet').click(function() {
-        $('#tweetter').attr('href', 'https://twitter.com/intent/tweet?text=' + encodeURIComponent("''" + quotes[i][0] + "''" + quotes[i][1]));
+    $('#tweet').click(function () {
+        $('#tweet').attr('href', 'https://twitter.com/intent/tweet?text=' + encodeURIComponent("''" + quotes[i][0] + "''" + quotes[i][1]));
     });
 
-    $('#button').click(function() {
-        $('#block').fadeOut(1500, function() {
-            i = Math.floor(Math.random() * 12) + 1;
+    $('#verse-but').click(function () {
+        $('#block').fadeOut(1000, function () {
+            i = Math.floor(Math.random() * 17) + 1;
             $('p').text("''" + quotes[i][0] + "''");
             $('#author').text(quotes[i][1]);
-            $('#block').fadeIn(1500);
+            $('#block').fadeIn(1000);
         });
 
     });
