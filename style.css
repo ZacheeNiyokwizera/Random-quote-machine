@@ -48,14 +48,15 @@ blockquote {
     .btn {
         height: 50px;
         width: 170px;
+        margin-right: 250px;
     }
     body {
-        margin-top: 10px;
-        margin-right: 50px;
+        margin-top: 40px;
+        margin-right: 350px;
     }
     blockquote {
-        width: 60%;
-        margin-left: 170px;
+        width: 40%;
+        margin-right: 400px;
     }
     p {
         font-size: 1em;
@@ -63,5 +64,6 @@ blockquote {
     }
     h1 {
         font-size: 2em;
+        margin-right: 400px;
     }
 }
