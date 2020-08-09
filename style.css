@@ -1,58 +1,51 @@
 h1 {
     font-family: 'Tangerine', serif;
-    text-shadow: 4px 4px 4px grey;
+    text-shadow: 4px 4px 4px black;
     margin: 10px auto;
-    font-size: 2em;
-    color:black;
+    font-size: 3em;
+    color: #fff;
     font-style: italic;
-} 
-/* MAKING the verses RESPONSIVE */
-@media screen and (max-width: 600px) {
-  h1 {
-    font-size: 0.5em; 
-  }
 }
-/* MAKING the buttons RESPONSIVE */
-@media screen and (max-width: 600px) {
-  #tweet-but, #verse-but {
-    font-size: 1px;
-    color: black;
-    display: flex;
-  align-content: center;
-  margin-left: 480px;
-  margin-top: 5px;
-
-    
-  }
-} 
 
 body {
     text-align: center;
     width: 1000px;
     margin: 90px auto;
-    background-color: blue;
     font-family: 'Tangerine', serif;
-    background: url(https://images.pexels.com/photos/953217/pexels-photo-953217.jpeg?cs=srgb&dl=blue-background-delicious-flatlay-953217.jpg&fm=jpg);
-}
-button {
-  display: inline-block;
-  padding: 15px 25px;
-  font-size: 24px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color:rgb(0, 191, 255);
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
+    background-image: url('bg.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: right;
 }
 
-button:hover {background-color: #3e8e41}
+.btn {
+    height: 60px;
+    width: 180px;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: rgb(0, 191, 255);
+    border: none;
+    border-radius: 15px;
+}
 
-button:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+.btn:hover {
+    background-color: #3e8e41
+}
+
+
+/* Responsiveness of small devices */
+
+@media only screen and (max-width: 600px) {
+    .btn {
+        height: 50px;
+        width: 150px;
+        background-color: red;
+    }
 }
