@@ -54,12 +54,10 @@ body {
         display: inline-block;
     }
     body {
+        height: 50%;
         margin-top: 40px;
-        background-image: url('bg.jpeg');
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: cover;
-        background-position: right;
+        background-image: none;
+        background-color: teal;
     }
     .container {
         width: 30%;
@@ -72,6 +70,5 @@ body {
     h1 {
         font-size: 1.5em;
         text-align: center;
-        text-align: justify;
     }
 }
